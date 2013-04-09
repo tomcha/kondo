@@ -18,15 +18,15 @@ post '/' => sub{
     my $str;
     if ($henkan eq '関西風'){
        if ($kantou eq 'つぎ'){
-           $str = '次発';
+           $str = 'つぎ　の電車は「次発」です。';
        }else{
-           $str = '先発';
+           $str = 'こんど　の電車は「先発」です。';
        };
     }elsif ($henkan eq 'English'){
        if ($kantou eq 'つぎ'){
-           $str = 'the second to depart'
+           $str = 'つぎ is the second to depart'
        }else{
-           $str = 'the first to depart'
+           $str = 'こんど is the first to depart'
        };
     }else{
     };
