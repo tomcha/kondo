@@ -4,6 +4,7 @@ use Mojolicious::Lite;
 
 # Documentation browser under "/perldoc"
 #plugin 'PODRenderer';
+app->config(hypnotoad => {listen => ['http://*:3001']});
 
 get '/' => sub {
   my $self = shift;
